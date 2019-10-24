@@ -9,7 +9,9 @@ app.config['PROPAGATE_EXCEPTIONS'] = True
 api = Api(app)
 
 
-api.add_resource(IrisClassifier ,'/iris')        
+api.add_resource(IrisClassifier ,'/iris')  
+
+app.run(port=5000)
       
 
 if __name__ == '__main__':
