@@ -1,7 +1,7 @@
 from flask import Flask
 
 from flask_restful import Api
-from iris import IrisClassifier
+from resources.iris import IrisClassifier
 
 # created an object of flask using a unique name
 app = Flask(__name__)
