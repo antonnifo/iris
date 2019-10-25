@@ -30,17 +30,6 @@ class IrisModel:
         x_std = self.scale_data()
         knn.fit(x_std,y)
         pickle.dump(knn, open('model.pkl','wb'))  # Saving model to disk
-        
-
-def map_predictions(self):
-        
-        map_ = { 0 : 'Iris setosa',
-                 1 : 'Iris versicolor',
-                 2 : 'Iris virginica' 
-                }
-
-        for k,v in map_.items():
-            pass
 
 if __name__ == '__main__':
     classifier = IrisModel(X,y)
